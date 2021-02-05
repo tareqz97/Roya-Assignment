@@ -173,8 +173,8 @@
                 height: 100px;
             }
             .news-section .image-text {
-                bottom: 50px;
-                height: 35px;
+                /*bottom: 50px;
+                height: 35px;*/
                 line-height: 1.2;
             }
             .news-item .title {
