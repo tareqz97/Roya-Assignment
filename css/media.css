@@ -115,6 +115,10 @@
             .right-animate-right {
                 top: 55px;
             }
+            .topnav-right a:hover {
+                padding-bottom: unset;
+                margin-bottom: unset;
+            }
         }
         
         @media only screen and (min-width: 400px) and (max-width: 600px) {
@@ -173,8 +177,8 @@
                 height: 100px;
             }
             .news-section .image-text {
-                /*bottom: 50px;
-                height: 35px;*/
+                bottom: 50px;
+                height: 35px;
                 line-height: 1.2;
             }
             .news-item .title {
@@ -217,6 +221,10 @@
             }
             .right-animate-right {
                 top: 55px;
+            }
+            .topnav-right a:hover {
+                padding-bottom: unset;
+                margin-bottom: unset;
             }
         }
         
@@ -277,6 +285,10 @@
             header .nav-right li {
                 margin-right: 5px;
             }
+            .topnav-right a:hover {
+                padding-bottom: unset;
+                margin-bottom: unset;
+            }
         }
         
         @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -304,7 +316,7 @@
                 display: inline-block;
             }
             .topnav-right a.active {
-                padding-bottom: 10px;
+                padding-bottom: 20px;
             }
             .next-slider,
             .prev-slider {
@@ -330,6 +342,10 @@
             .footer-info-img {
                 width: 35px;
                 height: 15px;
+            }
+            .topnav-right a:hover {
+                padding-bottom: 20px;
+                margin-bottom: 0px;
             }
         }
         
