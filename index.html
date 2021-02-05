@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>الصفحة الرئيسية | رؤيا</title>
+    <link rel="icon" href="images/icons/royaTvLogo.png" type="image/gif">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="nav-left">
+                <li><img src="images/icons/sign-in.png" style="width: 14px;height: 14px;padding-left: 5px;"><a href="#" title="تسجيل الدخول">تسجيل الدخول</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li>
+                    <a href="#" title="أكادمية رؤيا للتدريب الاعلامي">
+                        <span class="allow-lg">أكادمية رؤيا للتدريب الاعلامي</span>
+                        <span class="allow-sm">أكادمية رؤيا</span>
+                        <img src="images/icons/RA_logo.png"></a>
+                </li>
+                <li><a href="#" title="رؤيا الاخباري"><span>رؤيا الاخباري</span><img src="images/icons/RNA_logo.png"></a></li>
+                <li><a href="#" title="بازار رؤيا"><span>بازار رؤيا</span><img src="images/icons/RB_logo.png"></a></li>
+                <li><a href="#" title="دنيا يا دنيا"><span>دنيا يا دنيا</span><img src="images/icons/donyaLogo.svg" class="img-icon-with-background"></a></li>
+                <li><a href="#" title="The Show"><span>The Show </span><img src="images/icons/ShowLogo.png" class="img-icon-with-background"></a></li>
+            </ul>
+            <!-- <nav style="    display: flex;
+            flex-direction: row-reverse;
+            padding-top: 9px;">
+                <div class="nav-left">
+                    <a href="#" title="تسجيل الدخول">
+                        <img src="images/icons/sign-in.png" style="width: 14px;height: 14px;padding-left: 5px;">تسجيل الدخول</a>
+                </div>
+                <div class="nav-right">
+                    <a href="#" title="أكادمية رؤيا للتدريب الاعلامي">
+                        <span class="allow-lg">أكادمية رؤيا للتدريب الاعلامي</span>
+                        <span class="allow-sm">أكادمية رؤيا</span>
+                        <img src="images/icons/RA_logo.png"></a>
+                    <a href="#" title="رؤيا الاخباري"><span>رؤيا الاخباري</span><img src="images/icons/RNA_logo.png"></a>
+                    <a href="#" title="بازار رؤيا"><span>بازار رؤيا</span><img src="images/icons/RB_logo.png"></a>
+                    <a href="#" title="دنيا يا دنيا"><span>دنيا يا دنيا</span><img src="images/icons/donyaLogo.svg" class="img-icon-with-background"></a>
+                    <a href="#" title="The Show"><span>The Show </span><img src="images/icons/ShowLogo.png" class="img-icon-with-background"></a>
+                </div>
+            </nav> -->
+
+        </div>
+    </header>
+    <section class="nav">
+        <div class="container">
+            <nav class="topnav" id="myTopnav">
+                <a href="#" title="البث المباشر"><img class="roya-live" src="images/icons/tv-live.png"></a>
+                <a href="#">
+                    <span class="input-container">
+                        <input type="text" placeholder="ابحث هنا...">
+                        <span>
+                            <button><img src="images/icons/search.png"></button>
+                        </span>
+                    </span>
+                </a>
+                <div class="topnav-right">
+                    <a href="#" class="show-nav-sm" onclick="openRightMenu()" style="font-size: 27px;"><img src="images/icons/menu-button.png"></a>
+                    <a href="#" class="show-nav-sm"><span><img src="images/icons/royaTvLogo.png" class="roya-logo"></span></a>
+                    <a href="#" class="active" title="الرئيسية">الرئيسية</a>
+                    <a href="#" title="البرامج">البرامج</a>
+                    <a href="#" title="جدول البرامج">جدول البرامج</a>
+                    <a href="#" title="اخبار منوعة">اخبار منوعة</a>
+                    <a href="#" title="عن رؤيا">عن رؤيا</a>
+                    <a href="#" title="مقدمو البرامج">مقدمو البرامج</a>
+                    <a href="#" title="اعلن معنا">اعلن معنا</a>
+                    <a href="#" title="وظائف">وظائف</a>
+                </div>
+
+            </nav>
+
+            <div class="right-sidebar right-bar-block right-card right-animate-right" id="rightMenu">
+                <button onclick="closeRightMenu()" class="right-bar-item"><span style="font-size: 50px;color: white;">&times;</span></button>
+                <div class="navbar-right-top" title="تسجيل الدخول">
+                    <button class="more-news-button">تسجيل الدخول</button>
+                    <img src="images/icons/user.png">
+
+                </div>
+                <hr>
+                <ul class="navbar-rigt-body">
+                    <li>
+                        <a title="الرئيسية"><img src="images/icons/home.png"><span>الرئيسية</span></a>
+                    </li>
+                    <li>
+                        <a title="البرامج"><img src="images/icons/film.png"><span>البرامج</span></a>
+                    </li>
+                    <li>
+                        <a title="جدول البرامج"><img src="images/icons/calendar.png"><span>جدول البرامج</span></a>
+                    </li>
+                    <li>
+                        <a title="أخبار منوعة"><img src="images/icons/news.png"><span>أخبار منوعة</span></a>
+                    </li>
+                    <li>
+                        <a title="عن رؤيا"><img src="images/icons/info.png"><span>عن رؤيا</span></a>
+                    </li>
+                    <li>
+                        <a title="مقدمو البرامج"><img src="images/icons/mike.png"><span>مقدمو البرامج</span></a>
+                    </li>
+                    <li>
+                        <a title="أعلن معنا"><img src="images/icons/speaker.png"><span>أعلن معنا</span></a>
+                    </li>
+                    <li>
+                        <a title="وظائف"><img src="images/icons/jobs.png"><span>وظائف</span></a>
+                    </li>
+                    <li><a title="خدماتنا"><span><img src="images/icons/box.png"></span>خدماتنا</a></li>
+                    <hr>
+                    <li>
+                        <a title="المفضلة"><img src="images/icons/star.png"><span>المفضلة</span></a>
+                    </li>
+                    <li>
+                        <a title="قائمتي"><img src="images/icons/gallery.png"><span>قائمتي</span></a>
+                    </li>
+                    <li>
+                        <a title="الأشعارات"><img src="images/icons/notification.png"><span>الأشعارات</span></a>
+                    </li>
+                    <li>
+                        <a title="التذكير"><img src="images/icons/alarm.png"><span>التذكير</span></a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a title="رؤيا الاخباري"><img src="images/icons/RNA_logo.png" class="img-icon"><span>رؤيا الاخباري</span></a>
+                    </li>
+                    <li>
+                        <a title="اكادمية رؤيا للتدريب الاعلامي"><img src="images/icons/RA_logo.png" class="img-icon"><span>اكادمية رؤيا للتدريب الاعلامي</span></a>
+                    </li>
+                    <li>
+                        <a title="بازار رؤيا"><img src="images/icons/RB_logo.png" class="img-icon"><span>بازار رؤيا</span></a>
+                    </li>
+                    <li>
+                        <a title="دنيا يا دنيا"><img src="images/icons/donyaLogo.svg" class="img-icon-with-background"><span>دنيا يا دنيا</span></a>
+                    </li>
+                    <li>
+                        <a title="The Show"><img src="images/icons/ShowLogo.png" class="img-icon-with-background"><span>The Show</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section class="slideshow">
+        <div class="container">
+            <div class="slideshow-container">
+                <div class="mySlides fade" title="ريح المدام">
+                    <img src="images/slider/1.jpg" style="width:100%">
+
+                    <div class="control">
+                        <div class="text text-right">السابق</div>
+                        <div class="text text-left">ريح المدام</div>
+                        <div style="padding-top: 25px;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mySlides fade" title="عائلة الحاج نعمان">
+                    <img src="images/slider/2.jpeg" style="width:100%">
+                    <div class="live">بث مباشر</div>
+                    <div class="control">
+                        <div class="text text-right"><img src="images/icons/play-vedio.png"> تشاهدون الان</div>
+                        <div class="text text-left">عائلة الحاج نعمان</div>
+                        <div style="padding-top: 25px;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mySlides fade" title="فترة الاطفال">
+                    <img src="images/slider/3.jpg" style="width:100%">
+
+                    <div class="control">
+                        <div class="text text-right">بعد قليل</div>
+                        <div class="text text-left">فترة الاطفال</div>
+                        <div style="padding-top: 25px;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mySlides fade" title="أهلا سمسم - الموسم الثاني">
+                    <img src="images/slider/4.jpg" style="width:100%">
+
+                    <div class="control">
+                        <div class="text text-right">لاحقا</div>
+                        <div class="text text-left">أهلا سمسم - الموسم الثاني</div>
+                        <div class="dot-box">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/icons/previous.png"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="images/icons/right-arrow.png"></a>
+
+            </div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="slider-container">
+                <p class="title-style">حلقات جديدة</p>
+                <a class="next-slider" onclick="scrollWin(12,'slid',4)"></a>
+                <a class="prev-slider" onclick="scrollRev(12,'slid',4)"></a>
+                <div id="slid" class="slider" style="position: relative;">
+                    <div class="item video" title="ليش الشباب بتخاف تحكي بالسياسة!">
+                        <a href="#">
+                            <img id="img-slider" src="images/New Episodes/1.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="سحر مدينة كبادوكا في تركيا">
+                        <a href="#">
+                            <img src="images/New Episodes/2.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="الحلقة العاشرة">
+                        <a href="#">
+                            <img src="images/New Episodes/3.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="Toyota super المميزة">
+                        <a href="#">
+                            <img src="images/New Episodes/4.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="تخيل لو اختفت الشمس">
+                        <a href="#">
+                            <img src="images/New Episodes/5.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="تقلبات الطقس وتاثيرها">
+                        <a href="#">
+                            <img src="images/New Episodes/6.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="فساتين سهرة 2021">
+                        <a href="#">
+                            <img src="images/New Episodes/7.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="تجميد البويضات">
+                        <a href="#">
+                            <img src="images/New Episodes/8.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="كيف تتعامل مع تقلبات الطقس">
+                        <a href="#">
+                            <img src="images/New Episodes/9.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="الحلقة التاسعة">
+                        <a href="#">
+                            <img src="images/New Episodes/10.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="الحلقة الثامنة">
+                        <a href="#">
+                            <img src="images/New Episodes/11.jpg">
+                        </a>
+                    </div>
+                    <div class="item video" title="الحلقة السابعة والعشرون">
+                        <a href="#">
+                            <img src="images/New Episodes/12.jpg">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+            </div>
+            <div class="slider-container">
+                <p class="title-style">قريبا على رؤيا</p>
+                <a class="next-slider" onclick="scrollWin(1,'slid2',1)"></a>
+                <a class="prev-slider" onclick="scrollRev(1,'slid2',1)"></a>
+                <div id="slid2" class="slider" title="ما بعد الجريمة">
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/New Episodes/13.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <p class="title-style">الاكثر مشاهدة على رؤيا لعام 2020</p>
+                <a class="next-slider" onclick="scrollWin(12,'slid3',4)"></a>
+                <a class="prev-slider" onclick="scrollRev(12,'slid3',4)"></a>
+                <div id="slid3" class="slider">
+                    <div class="item" title="مسلسل الهيبة">
+                        <a href="#">
+                            <img src="images/New Episodes/14.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلسل طريق">
+                        <a href="#">
+                            <img src="images/New Episodes/15.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="خمسة ونص">
+                        <a href="#">
+                            <img src="images/New Episodes/16.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلس عائلة الحاج نعمان">
+                        <a href="#">
+                            <img src="images/New Episodes/17.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="ساعة كوميديا - مسلسل جلطة">
+                        <a href="#">
+                            <img src="images/New Episodes/18.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="بين قوسين">
+                        <a href="#">
+                            <img src="images/New Episodes/19.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلسل من الاخر">
+                        <a href="#">
+                            <img src="images/New Episodes/20.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلسل مأمون وشركاه">
+                        <a href="#">
+                            <img src="images/New Episodes/21.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلسل الهيبة">
+                        <a href="#">
+                            <img src="images/New Episodes/22.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلسل سلطانة المعز">
+                        <a href="#">
+                            <img src="images/New Episodes/23.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسلسل شاهد عيان">
+                        <a href="#">
+                            <img src="images/New Episodes/24.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="ساعة كوميديا - وطن ع وتر">
+                        <a href="#">
+                            <img src="images/New Episodes/25.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <p class="title-style">مسلسلات اضيفت حديثا</p>
+                <a class="next-slider" onclick="scrollWin(12,'slid4',4)"></a>
+                <a class="prev-slider" onclick="scrollRev(12,'slid4',4)"></a>
+                <div id="slid4" class="slider">
+                    <div class="item" title="ريح المدام">
+                        <a href="#">
+                            <img src="images/New Episodes/4-1.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="احلام ابو الهنا">
+                        <a href="#">
+                            <img src="images/New Episodes/4-2.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="رأفت الهجان">
+                        <a href="#">
+                            <img src="images/New Episodes/4-3.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="ما فيي">
+                        <a href="#">
+                            <img src="images/New Episodes/4-4.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="احلام ابو الهنا">
+                        <a href="#">
+                            <img src="images/New Episodes/4-5.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="رأفت الهجان">
+                        <a href="#">
+                            <img src="images/New Episodes/4-6.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="ما فيي">
+                        <a href="#">
+                            <img src="images/New Episodes/4-7.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="مسافة امان">
+                        <a href="#">
+                            <img src="images/New Episodes/4-8.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="جمع سالم">
+                        <a href="#">
+                            <img src="images/New Episodes/4-9.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="شاهد عيان">
+                        <a href="#">
+                            <img src="images/New Episodes/4-10.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="سلطانة العز">
+                        <a href="#">
+                            <img src="images/New Episodes/4-11.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="عشيقة">
+                        <a href="#">
+                            <img src="images/New Episodes/4-12.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <p class="title-style">برامجنا الجديدة</p>
+                <a class="next-slider" onclick="scrollWin(12,'slid5',4)"></a>
+                <a class="prev-slider" onclick="scrollRev(12,'slid5',4)"></a>
+                <div id="slid5" class="slider">
+                    <div class="item" title="طباخ افندي">
+                        <a href="#">
+                            <img src="images/New Episodes/5-1.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="على درب مين">
+                        <a href="#">
+                            <img src="images/New Episodes/5-2.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="اكلناها">
+                        <a href="#">
+                            <img src="images/New Episodes/5-3.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="بالعكس">
+                        <a href="#">
+                            <img src="images/New Episodes/5-4.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="ما بعد الجريمة">
+                        <a href="#">
+                            <img src="images/New Episodes/5-5.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="تشويش واضح">
+                        <a href="#">
+                            <img src="images/New Episodes/5-6.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="th10 سنوات">
+                        <a href="#">
+                            <img src="images/New Episodes/5-7.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="Crazy Xmax">
+                        <a href="#">
+                            <img src="images/New Episodes/5-8.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="دوري القتال العربي">
+                        <a href="#">
+                            <img src="images/New Episodes/5-9.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="لها من فلسطين">
+                        <a href="#">
+                            <img src="images/New Episodes/5-10.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="قصتي">
+                        <a href="#">
+                            <img src="images/New Episodes/5-11.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="فوبيا تحدي الخوف">
+                        <a href="#">
+                            <img src="images/New Episodes/5-12.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <p class="title-style">Caravan Plus</p>
+                <a class="next-slider" onclick="scrollWin(15,'slid6',4)"></a>
+                <a class="prev-slider" onclick="scrollRev(15,'slid6',4)"></a>
+                <div id="slid6" class="slider">
+                    <div class="item" title="تخيل لو - Caravan Plus">
+                        <a href="#">
+                            <img src="images/New Episodes/6-1.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - طاخ طيخ">
+                        <a href="#">
+                            <img src="images/New Episodes/6-2.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title=" Caravan Plus - Caryology">
+                        <a href="#">
+                            <img src="images/New Episodes/6-3.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="حكي Caravan Plus - Tech">
+                        <a href="#">
+                            <img src="images/New Episodes/6-4.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - ليش الشباب">
+                        <a href="#">
+                            <img src="images/New Episodes/6-5.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - شيف مان">
+                        <a href="#">
+                            <img src="images/New Episodes/6-6.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - وقف تقلك">
+                        <a href="#">
+                            <img src="images/New Episodes/6-7.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - اسوأ وأبيض">
+                        <a href="#">
+                            <img src="images/New Episodes/6-8.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="من خارج الملعب - Caravan Plus">
+                        <a href="#">
+                            <img src="images/New Episodes/6-9.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - انا وابي">
+                        <a href="#">
+                            <img src="images/New Episodes/6-10.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="من الشارع الفلسطيني - Caravan Plus ">
+                        <a href="#">
+                            <img src="images/New Episodes/6-13.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - Ibn Hattuta">
+                        <a href="#">
+                            <img src="images/New Episodes/6-14.jpg">
+                        </a>
+                    </div>
+                    <div class="item" title="جمجم - Caravan Plus">
+                        <a href="#">
+                            <img src="images/New Episodes/6-15.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="مدير حاله - Caravan Plus">
+                        <a href="#">
+                            <img src="images/New Episodes/6-16.jpeg">
+                        </a>
+                    </div>
+                    <div class="item" title="Caravan Plus - صنع في عمان ">
+                        <a href="#">
+                            <img src="images/New Episodes/6-17.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" style="border-bottom:1px solid white;padding-bottom: 25px;">
+            <div class="news-container">
+                <div class="facebook-section">
+                    <div class="fb-page" data-tabs="timeline,events,messages" data-href="https://www.facebook.com/Royatv/" data-width="380" data-hide-cover="false">
+                    </div>
+                </div>
+                <div class="news-section">
+                    <p class="title-style">اخبار منوعة</p>
+                    <img src="images/New Episodes/news-main-image.jpeg" class="main-news-image">
+                    <div class="image-text">
+                        <p class="sub-title" style="padding-right: 10px;font-size: 14px;">"صور - تغير كبير في شكلوفاء موصللي والجمهور يعلق : "رجعت 25 سنة</p>
+                    </div>
+                    <div class="news-item">
+
+                        <div class="item">
+                            <div>
+                                <img src="images/New Episodes/news-1.jpeg">
+                            </div>
+                            <div style="padding-right: 10px;">
+                                <h4 class="title">خطأ مضحك في مسلسل جمال الحريم يحدث ضجة .. صور</h4>
+                                <p class="sub-title allow-lg">
+                                    تداول رواد مواقع التواصل الاجتماعي صورة لأحد الحلقات من مسلسل جمال الحريم، ويظهر الخطأ الضخم الذي</p>
+                                <p class="sub-title">دراما وسينما | منذ 7 ساعات</p>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/New Episodes/news-2.jpeg">
+                            </div>
+                            <div style="padding-right: 10px;">
+                                <h4 class="title">وفاة مخترعة الإندومي</h4>
+                                <p class="sub-title allow-lg">أعلنت وسائل إعلام إندونيسية وفاة مخترعة الشعيرية سريعة التحضير المشهورة باسم ....</p>
+                                <p class="sub-title"> منوعات | منذ 10 ساعات </p>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/New Episodes/news-3.jpeg">
+                            </div>
+                            <div style="padding-right: 10px;">
+                                <h4 class="title">"الموناليزا" تتلقى لقاح كورونا بمشروع فني يبرز أهمية اللقاحات في مواجهة الوباء.. صور</h4>
+                                <p class="sub-title allow-lg"> كثر الجدل حول مدى فعالية اللقاحات المضادة لفيروس كورونا المستجد في العالم، خاصةً وسط انتشار</p>
+                                <p class="sub-title"> عجائب وغرائب | منذ 10 ساعات </p>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/New Episodes/news-4.jpeg">
+                            </div>
+                            <div style="padding-right: 10px;">
+                                <h4 class="title">لاعب كُرة السلة الأميركي ستيفن جاكسون يعتنق الإسلام</h4>
+                                <p class="sub-title allow-lg">أعلن نجم كُرة السلة الأميركية ستيفن جاكسون إعتناقه الإسلام في مسجد ابن عثيمين في ولاية فيلادلفيا في ....</p>
+                                <p class="sub-title"> منوعات | منذ يوم </p>
+                            </div>
+
+                        </div>
+                        <div class="more-news">
+                            <button class="more-news-button">المزيد من الاخبار</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="social-media">
+                    <p class="title-style">تابعونا</p>
+                    <table>
+                        <tr>
+                            <td><span>Instgram</span></td>
+                            <td><img src="images/icons/instagram.png"></td>
+                        </tr>
+                        <tr>
+                            <td><span>YouTube</span></td>
+                            <td><img src="images/icons/youtube.png"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Twitter</span></td>
+                            <td><img src="images/icons/twitter.png"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Facebook</span></td>
+                            <td><img src="images/icons/facebook.png"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Nabd</span></td>
+                            <td><img src="images/icons/nbd.png" style="width: 25px;"></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="contact-us">
+                    <p class="title-style">اتصل بنا</p>
+                    <ul style="list-style: none;
+                    padding-right: 0px;">
+                        <li><span> رقم الهاتف 0096264206419</span></li>
+                        <li><span> رقم الفاكس 0096264206524</span></li>
+                        <li><span>صندوق بريد 961401</span> <span>عمان الأردن 11196</span></li>
+                    </ul>
+                </div>
+                <div class="more-info">
+                    <p class="title-style">ترددات قناة رؤيا | نايل سات</p>
+                    <ul>
+                        <li>SD 12398 V | HD 11957 H </li>
+                        <li>حمّل تطبيق رؤيا وتحكّم بمشاهدة ما تريد أينما تريد على بعد كبسة زر</li>
+                        <li>
+                            <img class="footer-info-img" src="images/icons/GooglePlay.png">
+                            <img class="footer-info-img" src="images/icons/iOS.png">
+                            <img class="footer-info-img" src="images/icons/tvs.png">
+                            <img class="footer-info-img" src="images/icons/huawei.png">
+                        </li>
+                        <li>لمشاهدينا في الإمارات العربية المتحدة، تابعونا عبر القنوات التالية</li>
+                        <li>
+                            <span>
+                                <img src="images/icons/du.png">
+                                <span>قناة رقم 166</span>
+                            </span>
+                            <span style="float: left;">
+                                <img src="images/icons/eLife.png">
+                                <span>قناة رقم 691</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-2-container title-style">
+                <div style="float: right;">
+                    قناة رؤيا | <a title="سياسة الخصوصية">سياسة الخصوصية</a>
+                </div>
+                <div style="float: left;">
+                    جميع الحقوق محفوظة © 2021
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="9UyMgXdQ"></script>
+</body>
+
+</html>
