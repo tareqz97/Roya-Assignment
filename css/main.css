@@ -1,4 +1,4 @@
-/* @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css); */
+
 
 body {
     background-color: #000;
@@ -125,6 +125,8 @@ header .nav-right img {
 
 .topnav-right a:hover {
     border-bottom: 2px solid white;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .show-nav-sm:hover {
